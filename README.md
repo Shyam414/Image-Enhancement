@@ -1,6 +1,9 @@
 # Super-Resolution Convolutional Neural Network (SRCNN) Project
 
-project Link: https://github.com/Shyam414/Image-Enhancement
+
+## Project Link
+
+For more details, visit the [project repository](https://github.com/Shyam414/Image-Enhancement).
 
 # Overview
 
