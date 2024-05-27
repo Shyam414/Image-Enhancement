@@ -8,17 +8,17 @@ project Link: https://github.com/Shyam414/Image-Enhancement
 This project focuses on enhancing low-quality images using a Super-Resolution Convolutional Neural Network (SRCNN). The SRCNN model is trained to take low-resolution images as input and output high-resolution images. The dataset consists of pairs of low-quality and high-quality images.
 
 # Project Structure
-## normalize.py: 
+### normalize.py: 
 Contains functions for image preprocessing such as loading, resizing, and normalizing images.
-## plot.py: 
+### plot.py: 
 Contains functions for plotting original and enhanced images side by side.
-## train.py: 
+### train.py: 
 Main script for training the SRCNN model.
-## srcnn_model.h5: 
+### srcnn_model.h5: 
 Pre-trained SRCNN model.
-## low_quality_images/: 
+### low_quality_images/: 
 Directory containing low-quality images.
-## high_quality_images/: 
+### high_quality_images/: 
 Directory containing corresponding high-quality images.
 
 ## How to Use
