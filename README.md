@@ -38,7 +38,8 @@ Matplotlib
 ## Installation
 Install the required packages using pip:<br>
 pip install tensorflow numpy pillow matplotlib
-## pip install tensorflow numpy pillow matplotlib
+
+## Steps to Execute
 Ensure the low_quality_images and high_quality_images directories contain the appropriate image pairs.<br>
 Execute the train.py script to train and save the model.<br>
 Use the trained model to enhance new low-quality images and visualize the results using the plot_image function.
