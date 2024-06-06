@@ -43,7 +43,7 @@ y_train = np.array(y_train_list)
 print(f"x_train shape: {x_train.shape}")
 print(f"y_train shape: {y_train.shape}")
 
-plot_image_2(x_train[1], y_train[1])
+#plot_image_2(x_train[1], y_train[1])
 
 model = load_model('srcnn_model.h5')
 
