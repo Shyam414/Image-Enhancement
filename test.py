@@ -5,10 +5,9 @@ import numpy as np
 from tensorflow.keras.models import load_model
 
 
-test_image_path = "img/1.jpg"
-final="img/1
 
-h.png"
+test_image_path = "img/1.jpg"
+final="img/1h.png"
 
 
 processed_test_image = process_image(test_image_path)

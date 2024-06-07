@@ -24,8 +24,14 @@ print(f"y_train shape: {y_train.shape}")
 
 #plot_image_2(x_train[1],y_train[1])
 
+
+
+
 model = load_model('srcnn_model.h5')
 
 model.compile(optimizer='adam', loss='mean_squared_error', metrics=['accuracy'])
-model.fit(x_train, y_train, epochs=50, batch_size=5)
+
+model.fit(x_train, y_train, epochs=1000, batch_size = 5)
+
+
 model.save('srcnn_model.h5')

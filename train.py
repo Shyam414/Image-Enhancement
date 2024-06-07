@@ -4,9 +4,11 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from normalize import process_image
 from plot import plot_image_2
+import tensorflow as tf
 
 
-def load_images_from_directory(directory, start=45, end=50):
+
+def load_images_from_directory(directory, start=20, end=50):
     images = []
     for filename in os.listdir(directory):
         if filename.endswith(".jpg") or filename.endswith(".png"):
@@ -43,11 +45,12 @@ y_train = np.array(y_train_list)
 print(f"x_train shape: {x_train.shape}")
 print(f"y_train shape: {y_train.shape}")
 
-#plot_image_2(x_train[1], y_train[1])
+
+plot_image_2(x_train[1], y_train[1])
 
 model = load_model('srcnn_model.h5')
 
-model.compile(optimizer='adam', loss='mean_squared_error', metrics=['accuracy'])
-model.fit(x_train, y_train, epochs=50, batch_size=5)
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001), loss='mean_squared_error', metrics=['accuracy'])
+model.fit(x_train, y_train, epochs=10, batch_size=30)
 model.save('srcnn_model.h5')
 
